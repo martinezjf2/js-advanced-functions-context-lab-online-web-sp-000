@@ -37,8 +37,12 @@ function createEmployeeRecords(arys) {
     return arys.map(createEmployeeRecord)
 }
 
-function createTimeInEvent() {
+function createDSObj(getType, dateStamp) {
+    return {type: getType, date: dateStamp.slice(0,10), hour: parseInt(dateStamp.slice(-4))}
+}
 
+function createTimeInEvent(obj, dateStamp) {
+    obj.timeInEvents.push(createDSObj("TimeIn", dateStamp))
 }
 
 function createTimeOutEvent() {
