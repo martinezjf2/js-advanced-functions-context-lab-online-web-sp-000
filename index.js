@@ -20,3 +20,36 @@ let allWagesFor = function () {
 
     return payable
 }
+
+function createEmployeeRecord(ary) {
+    let record;
+    return record = {
+        firstName: ary[0],
+        familyName: ary[1],
+        title: ary[2],
+        payPerHour: ary[3],
+        timeInEvents: [],
+        timeOutEvents: []
+    }
+}
+
+function createEmployeeRecords(arys) {
+    return arys.map(createEmployeeRecord)
+}
+
+function createTimeInEvent() {
+
+}
+
+function createTimeOutEvent() {
+
+}
+
+function wagesEarnedOnDate() {
+
+}
+
+function calculatePayroll() {
+
+}
+
