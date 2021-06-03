@@ -87,3 +87,4 @@ function calculatePayroll(empArray) {
     // what is the purpose of the call method and why we need to invoke the 0
 }
 
+// comment
